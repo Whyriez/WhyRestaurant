@@ -1,0 +1,28 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background for the Spinner -->
+    <item android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white" />
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+
+    <!-- Stroke for the Spinner -->
+    <item >
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+            <stroke
+                android:width="3dp"
+                android:color="@color/pink_800" />
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+
+    <!-- Arrow Icon -->
+    <item
+        android:id="@+id/arrow"
+        android:right="8dp"
+        android:gravity="end|center_vertical"
+        android:drawable="@drawable/ic_arrow_drop"
+        android:drawablePadding="4dp" />
+</layer-list>

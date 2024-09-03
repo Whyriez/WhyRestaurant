@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_above="@+id/lybtn"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/lyImage"
+                android:layout_width="match_parent"
+                android:background="@drawable/bg_border"
+                android:layout_height="350dp">
+
+                <ImageView
+                    android:id="@+id/itemImageDetail"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/sample" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/titleDetail"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Ayam"/>
+
+            <TextView
+                android:id="@+id/priceDetail"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text="Rp 0000"/>
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="13dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text="Ayam adalah"/>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    
+    <LinearLayout
+        android:id="@+id/lybtn"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnMinus"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn"
+            android:textSize="30dp"
+            android:text="-"/>
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@drawable/bg_border"
+            android:textSize="28dp"
+            android:textColor="@color/black"
+            android:text="1"/>
+
+        <Button
+            android:id="@+id/btnPlus"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn"
+            android:textSize="26dp"
+            android:text="+"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/addToCart"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_btn"
+                android:textSize="20dp"
+                android:textAllCaps="false"
+                android:text="Add to cart"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    
+    
+
+
+
+
+</RelativeLayout>

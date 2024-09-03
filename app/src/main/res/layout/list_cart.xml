@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+    <RelativeLayout
+        android:id="@+id/lyImage"
+        android:layout_width="120dp"
+        android:background="@drawable/bg_border"
+        android:layout_height="114dp">
+
+        <ImageView
+            android:id="@+id/itemImageCart"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/sample" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/itemCartName"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="left"
+            android:textSize="18dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ayam Krispi "/>
+
+        <TextView
+            android:id="@+id/itemCartPrice"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="left"
+            android:textSize="18dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00000"/>
+
+        <LinearLayout
+            android:id="@+id/lybtn"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnMinusCart"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_btn"
+                android:textSize="30dp"
+                android:text="-"/>
+
+            <TextView
+                android:id="@+id/quantity"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:background="@drawable/bg_border"
+                android:textSize="28dp"
+                android:textColor="@color/black"
+                android:text="1"/>
+
+            <Button
+                android:id="@+id/btnPlusCart"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_btn"
+                android:textSize="26dp"
+                android:text="+"/>
+
+            <Button
+                android:id="@+id/removeItem"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/bg_btn"
+                android:textSize="20dp"
+                android:textAllCaps="false"
+                android:text="X"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

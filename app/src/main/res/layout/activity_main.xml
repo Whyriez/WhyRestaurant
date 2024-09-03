@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_marginTop="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textColor="@color/pink_800"
+        android:textStyle="bold"
+        android:text="Why Restaurant"/>
+
+<!--    <ImageView-->
+<!--        android:id="@+id/logo"-->
+<!--        android:layout_marginTop="250dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_width="330dp"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:background="@drawable/logo"/>-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lyInputTable"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:hintTextColor="@color/pink_600"
+        app:boxStrokeColor="@color/pink_600"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/inputTable"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="8tY6mH"
+        android:hint="Input Table Code" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/lyInputTable"
+        android:layout_width="match_parent"
+        android:textAllCaps="false"
+        android:background="@drawable/bg_btn"
+        android:layout_height="wrap_content"
+        android:text="Submit"/>
+
+    <Button
+        android:id="@+id/btnToLogin"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_btn"
+        android:layout_height="wrap_content"
+        android:text="Login as Staff"/>
+
+</RelativeLayout>
